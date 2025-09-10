@@ -46,12 +46,6 @@ These insights can power dashboards for **Product** and **Operations teams**, en
 
 ## ⚙️ Setup Instructions
 
-Perfect 👍 Here’s a **ready-to-use Setup Instructions section** you can paste directly into your `README.md`.
-
----
-
-## ⚙️ Setup Instructions
-
 Follow these steps to run the project locally:
 
 ### 1. Clone the Repository
