@@ -17,16 +17,12 @@ These insights can power dashboards for **Product** and **Operations teams**, en
 
 ## 🎯 Features
 - Extracts **structured insights** from free-text reviews:
-  - ✅ Metadata (review_id, date, rating)
-  - 😀 Overall sentiment
   - 🏷️ Topics mentioned (delivery, UI, support, pricing, etc.)
   - 👍 Positive opinions
   - 👎 Negative opinions
   - 📉 Problems raised
   - 💡 Suggestions for improvement
 - Outputs in **valid JSON** schema (machine-readable)
-- Works on **single reviews** or **batch of reviews (JSON/CSV)**
-- Ready for visualization (Streamlit / BI tools)
 
 ---
 
@@ -35,6 +31,7 @@ These insights can power dashboards for **Product** and **Operations teams**, en
 <p align="center">
   <img src="architecture.jpg" alt="Architecture Diagram" width="600"/>
 </p>
+
 1. User Review → Customers submit raw reviews through the application.
 
 2. Database → All incoming reviews are stored in the database along with their review_id.
@@ -49,4 +46,50 @@ These insights can power dashboards for **Product** and **Operations teams**, en
 
 ## ⚙️ Setup Instructions
 
+Perfect 👍 Here’s a **ready-to-use Setup Instructions section** you can paste directly into your `README.md`.
+
 ---
+
+## ⚙️ Setup Instructions
+
+Follow these steps to run the project locally:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/muhammad-masood-ur-rehman/AI-Review-Analysis.git
+```
+
+### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Configure Environment Variables
+
+Create a `.env` file in the project root and add your OpenRouter API key:
+
+```
+OPENROUTER_API_KEY=your_api_key_here
+```
+
+### 4. Change Sample Reviews
+
+Change the input Reviews in "main.py":
+
+### 5. Run the Application
+
+```bash
+python main.py
+```
+---
+
+## 🧪 Tested Cases
+
+| Raw Review | Extracted Info |
+|------------|----------------|
+| ![Raw Review 1](testcase1.png) | ![Extracted Info 1](testresult1.png) |
+| ![Raw Review 2](testcase2.png) | ![Extracted Info 2](testresult2.png) |
+| ![Raw Review 3](testcase3.png) | ![Extracted Info 3](testresult3.png) |
+| ![Raw Review 4](testcase4.png) | ![Extracted Info 4](testresult4.png) |
