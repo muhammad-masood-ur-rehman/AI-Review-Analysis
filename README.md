@@ -32,13 +32,10 @@ These insights can power dashboards for **Product** and **Operations teams**, en
 
 ## 🏗️ Architecture
 
-```mermaid
-flowchart TD
-  A[Raw Customer Reviews] --> B[Ingestion (CSV/JSON/API)]
-  B --> C[LLM Processing (OpenRouter API)]
-  C --> D[Output Validator & Canonicalizer]
-  D --> E[(Insights Storage - JSON/DB)]
-  E --> F[Visualization (Dashboard / BI Tool)]
+<p align="center">
+  <img src="architecture.jpg" alt="Architecture Diagram" width="600"/>
+</p>
+
 
 ---
 
