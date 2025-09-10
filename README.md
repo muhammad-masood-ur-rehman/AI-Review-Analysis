@@ -35,7 +35,15 @@ These insights can power dashboards for **Product** and **Operations teams**, en
 <p align="center">
   <img src="architecture.jpg" alt="Architecture Diagram" width="600"/>
 </p>
+1. User Review → Customers submit raw reviews through the application.
 
+2. Database → All incoming reviews are stored in the database along with their review_id.
+
+3. Queue System → The review_id is also sent to a queue system to ensure asynchronous and reliable     processing.
+
+4. AI Extraction → The AI module fetches raw reviews from the database using the review_id, processes them, and extracts structured insights (sentiment, problems, suggestions, etc.).
+
+5. Extracted Reviews → Structured insights are written back into the database and made available for downstream dashboards and analytics.
 
 ---
 
